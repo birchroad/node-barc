@@ -1,14 +1,15 @@
 {
   "author": "Peter Magnusson <kmpm@birchroad.net>",
   "name": "barc",
-  "description": "1D Barcode library for node. Buils upon node-canvas",
+  "description": "Library for creating 1D barcodes with node.js. Backed by node-canvas.",
+  "keywords": ["barcode", "canvas"]
   "version": "0.0.1",
   "repository": {
-    "url": ""
+    "url": "git://github.com/birchroad/node-barc"
   },
   "main": "index.js",
   "engines": {
-    "node": "~v0.4.10"
+    "node": ">=v0.4.8"
   },
   "dependencies": {
       "canvas": ">=0.0.1"
