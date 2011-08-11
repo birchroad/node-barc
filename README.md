@@ -1,6 +1,9 @@
 # node-barc
  Barc is a barcode library for 1D barcodes rendered using node-canvas.
- The plan is to suport at least Code2of5, Code39 and Code128
+ The plan is to suport at least Code2of5, Code39 and Code128 of whitch
+ Code2of5 and Code128 are usable.
+ It might not be 100% to specification in all cases but it works for
+ most applications
 
 ## Authors
 
@@ -9,11 +12,24 @@
 ## Installation
     $ npm install barc
 
-[node-canvas](http://github.com/LearnBoost/node-canvas) might have some dependencies to look out for. 
+### Dependencies
+ [node-canvas](http://github.com/LearnBoost/node-canvas) might have some dependencies to look out for. 
+ Node canvas is a [Cairo](http://cairographics.org/) backed Canvas 
+ implementation for [NodeJS](http://nodejs.org).
 
 
+## Usage
 
-## Example
+ This library let's you define the size of the resulting image and that might
+ lead to unreadable barcodes if you don't make enough room for it.
+ The same goes for border and padding. If the smallest bar don't fit the
+ resolution used then you will defenitely have issues.
+ This will also apply if you add rotation which makes it hard for the graphics
+ library and any printers to draw well defined lines.
+ Try and see what fit your requirements.
+
+
+### Example
 
 ```javascript
 var Barc = require('barc')
@@ -38,14 +54,14 @@ Constructor which enables you to set common options for all generated barcodes.
  Valid options
 
  - hri - Defaults to __true__. If human readable information i.e. numbers are to be written as well.
- - border - Default to 0. The number of pixels black border. Could be a function with (width, height) signature. If the string "auto" is given as border it is calculated to 1/30 of the image width.
- - padding Defaults to border width * 3. Padding inside any border before barcode starts. Can be a function with the signature (width, height).
+ - border - Default to 0. The number of pixels black top and bottom border. Could be a function with (width, height) signature. If the string "auto" is given as border it is calculated to 1/30 of the image height.
+ - padding Defaults to 0. Padding on the left and right edges. Can be a function with the signature (width, height).
  - font - Defaults to 'FreeMono'. That font must be available to the graphics library
  - fontsize - Defaults to border width or min 12px. Number in pixels of the font size for hri.
 
 
 
- ## License 
+## License 
 
 (The MIT License)
 
