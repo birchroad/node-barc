@@ -3,7 +3,7 @@
   "name": "barc",
   "description": "Library for creating 1D barcodes with node.js. Backed by node-canvas.",
   "keywords": ["barcode", "canvas", "code 128", "code 2of5"],
-  "version": "0.0.3",
+  "version": "0.0.4",
   "repository": {
     "type": "git",
     "url": "git://github.com/birchroad/node-barc"

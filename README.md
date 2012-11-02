@@ -58,6 +58,7 @@ Constructor which enables you to set common options for all generated barcodes.
  - padding Defaults to 0. Padding on the left and right edges. Can be a function with the signature (width, height).
  - font - Defaults to 'FreeMono'. That font must be available to the graphics library
  - fontsize - Defaults to border width or min 12px. Number in pixels of the font size for hri.
+ - checksum - Defaults to false. If true, the checksum is appended, if the code varaiant supports it. __Note__: In case of 2of5, the input length increases by one. As a result, the input length switches from even to odd and vice versa.
 
 
 
