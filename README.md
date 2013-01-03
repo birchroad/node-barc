@@ -37,7 +37,7 @@ var Barc = require('barc')
 	,fs = require('fs');
 
 //create a 300x200 px image with the barcode 1234
-var buf = barc.code2op5('1234', 300, 200);
+var buf = barc.code2of5('1234', 300, 200);
 fs.writeFile(__dirname + '/example.png', buf, function(){
 	console.log('wrote it');
 });
