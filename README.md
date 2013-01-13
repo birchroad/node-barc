@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/birchroad/node-barc.png)](http://travis-ci.org/birchroad/node-barc)
 # node-barc
  Barc is a barcode library for 1D barcodes rendered using node-canvas.
  The plan is to suport at least Code2of5, Code39 and Code128 of whitch
