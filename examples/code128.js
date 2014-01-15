@@ -2,7 +2,6 @@ var Barc= require ('../lib/barc')
 	,fs = require('fs');;
 
 
-
 generate('defaults', 'Wikipedia', new Barc());
 generate('automatic border', 'PJJ123C', new Barc({border:'auto'}));
 generate('big font', '5760466961738', new Barc({fontsize:20}));

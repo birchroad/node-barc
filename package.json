@@ -9,7 +9,7 @@
     "url": "git://github.com/birchroad/node-barc"
   },
   "bugs": {
-    "web":"http://github.com/birchroad/node-barc/issues"
+    "url": "http://github.com/birchroad/node-barc/issues"
   },
   "main": "index.js",
   "engines": {
