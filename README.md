@@ -14,8 +14,8 @@
     $ npm install barc
 
 ### Dependencies
- [node-canvas](http://github.com/LearnBoost/node-canvas) might have some dependencies to look out for. 
- Node canvas is a [Cairo](http://cairographics.org/) backed Canvas 
+ [node-canvas](http://github.com/LearnBoost/node-canvas) might have some dependencies to look out for.
+ Node canvas is a [Cairo](http://cairographics.org/) backed Canvas
  implementation for [NodeJS](http://nodejs.org).
 
 
@@ -63,7 +63,7 @@ Constructor which enables you to set common options for all generated barcodes.
 
 
 
-## License 
+## License
 
 (The MIT License)
 

@@ -2,7 +2,6 @@ var Barc= require ('../lib/barc')
 	fs = require('fs');
 
 
-
 generate('defaults', new Barc());
 generate('automatic border', new Barc({border:'auto'}));
 generate('big font', new Barc({fontsize:40}));
